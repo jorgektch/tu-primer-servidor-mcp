@@ -1,0 +1,48 @@
+{
+  "moneda": "PEN",
+  "simulado": true,
+  "productos": [
+    {
+      "id": "bicicleta",
+      "nombre": "Bicicleta",
+      "stock": 3,
+      "precio_centimos": 85000,
+      "categoria": "Transporte",
+      "alias": [
+        "bicicletas",
+        "bici",
+        "bicis"
+      ]
+    },
+    {
+      "id": "casco",
+      "nombre": "Casco",
+      "stock": 0,
+      "precio_centimos": 12000,
+      "categoria": "Seguridad",
+      "alias": [
+        "cascos"
+      ]
+    },
+    {
+      "id": "candado",
+      "nombre": "Candado",
+      "stock": 5,
+      "precio_centimos": 4500,
+      "categoria": "Seguridad",
+      "alias": [
+        "candados"
+      ]
+    },
+    {
+      "id": "luz",
+      "nombre": "Luz",
+      "stock": 8,
+      "precio_centimos": 3500,
+      "categoria": "Accesorios",
+      "alias": [
+        "luces"
+      ]
+    }
+  ]
+}

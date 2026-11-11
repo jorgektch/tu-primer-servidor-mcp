@@ -2,13 +2,14 @@
   "name": "readme-to-slides",
   "private": true,
   "version": "1.5.1",
-  "description": "A GitHub README-powered technical presentation template",
+  "description": "Taller de servidor MCP Python v2, slides interactivos y demostración offline",
   "scripts": {
     "test": "node --test tests/*.test.mjs",
     "test:static": "python3 tests/check_deck.py && python3 tests/test_quality_checker.py",
     "test:e2e": "playwright test",
     "test:all": "npm test && npm run test:static && npm run test:updates && npm run test:e2e",
-    "test:updates": "python3 -m unittest discover -s tests -p test_engine_update.py"
+    "test:updates": "python3 -m unittest discover -s tests -p test_engine_update.py",
+    "test:workshop": "node --test tests/mcp-demo.test.mjs && python tests/check_workshop.py && python -m unittest discover -s tests -p \"test_mcp*.py\" -v"
   },
   "devDependencies": {
     "@playwright/test": "^1.55.0"

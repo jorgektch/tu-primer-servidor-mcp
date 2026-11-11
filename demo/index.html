@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Simulador educativo de la interacción MCP: Tools, Resources y Prompts. No conecta a un servidor MCP real.">
+  <title>Laboratorio visual · Tu Primer Servidor MCP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <div class="eyebrow">TU PRIMER SERVIDOR MCP · LABORATORIO</div>
+    <h1>Explorador visual del protocolo</h1>
+    <p class="intro">Observa los mensajes conceptuales entre un cliente y un servidor MCP. Los resultados se calculan en el navegador con un inventario ficticio.</p>
+    <div class="notice"><strong>Simulación, no cliente MCP real.</strong> Aquí no hay LLM ni proceso MCP; para ejecutar el protocolo auténtico usa <code>python 02_probar_cliente_mcp.py</code>.</div>
+    <div class="steps"><span>👤 Usuario</span><span>→</span><span>🔌 Cliente</span><span>→</span><span>🖥️ Servidor</span><span>→</span><span>📚 Catálogo</span></div>
+    <div class="controls"><label for="case-select">Escenario para explorar</label><select id="case-select" aria-label="Escenario didáctico"></select></div>
+    <h2 id="case-title">Cargando...</h2><p id="case-description"></p>
+    <div class="columns"><section><h3>Solicitud ilustrativa</h3><pre id="request-json" aria-label="Solicitud JSON RPC"></pre></section>
+      <section><h3>Respuesta simulada</h3><pre id="response-json" aria-label="Respuesta JSON RPC"></pre></section></div>
+    <p id="status" class="status" aria-live="polite">Cargando inventario de ejemplo…</p>
+    <footer><a href="../">Volver a la presentación</a> · <a href="https://github.com/jorgektch/tu-primer-servidor-mcp">Ver repositorio</a></footer>
+  </main><script type="module" src="app.mjs"></script>
+</body></html>
